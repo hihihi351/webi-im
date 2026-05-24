@@ -25,14 +25,39 @@ header{
 }
 
 section{
-    padding:40px;
+    padding:30px;
 }
 
-.card{
+.box{
     background:#1e293b;
-    padding:25px;
+    padding:20px;
     border-radius:15px;
+    margin-top:25px;
+}
+
+img{
+    width:300px;
+    border-radius:15px;
+    margin-top:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
     margin-top:20px;
+}
+
+table, th, td{
+    border:2px solid white;
+}
+
+th, td{
+    padding:15px;
+    text-align:center;
+}
+
+th{
+    background:#334155;
 }
 
 button{
@@ -41,18 +66,12 @@ button{
     border-radius:10px;
     font-size:18px;
     cursor:pointer;
-    background:cyan;
-    font-weight:bold;
-}
-
-button:hover{
-    transform:scale(1.05);
-    transition:0.3s;
+    margin-top:20px;
 }
 
 #mesazh{
     margin-top:20px;
-    font-size:24px;
+    font-size:25px;
     color:cyan;
 }
 
@@ -69,34 +88,57 @@ footer{
 <body>
 
 <header>
-💻 PROJEKT SHKOLLOR\TIK
+💻 PROJEKT SHKOLLOR
 </header>
 
 <section>
 
-<div class="card">
-<h1>Rreth Projektit</h1>
+<div class="box">
+<h1>Rreth Teknologjise</h1>
 
 <p>
-Ky projekt eshte krijuar me HTML, CSS dhe JavaScript.
-Qellimi i tij eshte te tregoje nje website modern dhe interaktiv.
+Teknologjia eshte pjese shume e rendesishme e jetes moderne.
+Programimi perdoret per krijimin e aplikacioneve dhe website-ve.
 </p>
+
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
 </div>
 
-<div class="card">
-<h1>Gjuhet e Programimit</h1>
+<div class="box">
 
-<ul>
-<li>HTML - struktura e faqes</li>
-<li>CSS - dizajni dhe ngjyrat</li>
-<li>JavaScript - funksionet interaktive</li>
-</ul>
+<h1>Tabela e Gjuheve</h1>
+
+<table>
+
+<tr>
+<th>Gjuha</th>
+<th>Perdorimi</th>
+</tr>
+
+<tr>
+<td>HTML</td>
+<td>Krijon strukturen e webit</td>
+</tr>
+
+<tr>
+<td>CSS</td>
+<td>Ben dizajnin dhe ngjyrat</td>
+</tr>
+
+<tr>
+<td>JavaScript</td>
+<td>Shton funksione interaktive</td>
+</tr>
+
+</table>
+
 </div>
 
-<div class="card">
-<h1>Demo Interaktive</h1>
+<div class="box">
 
-<button onclick="shfaqMesazh()">
+<h1>Demo JavaScript</h1>
+
+<button onclick="mesazh()">
 Kliko Ketu
 </button>
 
@@ -107,15 +149,15 @@ Kliko Ketu
 </section>
 
 <footer>
-Punoi: Armonela Koleci
+Punoi: Kida
 </footer>
 
 <script>
 
-function shfaqMesazh(){
+function mesazh(){
 
 document.getElementById("mesazh").innerHTML =
-"💻 Miresevini ne projektin tim!!";
+"🚀MIRESEVINI NE PROJEKTIN TIM!!";
 
 }
 
